@@ -280,8 +280,8 @@ void UKF::SigmaPointPrediction(MatrixXd& Xsig_aug, double dt) {
     }
 }
 
-
-void UKF::PredictMeanAndCovariance() {
+void UKF::PredictMeanAndCovariance() 
+{
     // set weights and these weights will be shared during update
     weights_(0) = lambda_ / (lambda_ + n_aug_);
     for (int i = 1; i < 2 * n_aug_ + 1; i++) 

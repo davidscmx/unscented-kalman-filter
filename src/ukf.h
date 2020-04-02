@@ -54,16 +54,18 @@ public:
     void PredictMeanAndCovariance();
     
     /**
-     * @brief 
+     * @brief Predicts radar measurements
      * 
      */
     void PredictRadarMeasurement();
     
     /**
-     * @brief 
+     * @brief Predicts the laser measurement
      * 
      */
     void PredictLaserMeasurement();
+    
+
     
     void UpdateState(const Eigen::VectorXd& z);
 
